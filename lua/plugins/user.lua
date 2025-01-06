@@ -41,8 +41,8 @@ return {
           ["ss"]         = { ":split<CR>",     desc = "水平分割" },
           ["vv"]         = { ":vsplit<CR>",    desc = "垂直分割" },
           ["cc"]         = { ":bd<CR>",        desc = "現在のバッファを閉じる" },
-          ["<Right>"]    = { ":bnext<CR>",     desc = "次のバッファ" },
-          ["<Left>"]     = { ":bprevious<CR>", desc = "前のバッファ" },
+          ["<Right>"]    = { ":bprevious<CR>", desc = "前のバッファ" },
+          ["<Left>"]     = { ":bnext<CR>",     desc = "次のバッファ" },
           ["<Leader>dd"] = { ":%delete<CR>",   desc = "全内容削除" },
 
           ["<Plug>(todo_done)"] = {
