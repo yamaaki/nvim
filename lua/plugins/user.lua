@@ -195,5 +195,5 @@ return {
         npairs.add_rule(Rule("```", "```"))
       end,
     },
-  }
+  },
 }
