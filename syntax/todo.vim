@@ -35,4 +35,7 @@ highlight todo09 guifg=#999999 gui=NONE
 syntax match todo10 "^[#].*$"
 highlight todo10 guifg=#666666 gui=NONE
 
+syntax region todo11 start='^\s*```' end='^\s*```' keepend
+highlight todo11 guifg=#5FA7FF gui=NONE
+
 let b:current_syntax = "todo"
