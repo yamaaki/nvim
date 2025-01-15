@@ -5,31 +5,31 @@ endif
 syntax clear
 syntax sync fromstart
 
-syntax region 01 start=/^=\+$/ end=/^=\+$/
-highlight 01 guifg=#7EE787 gui=NONE
+syntax region aws01 start=/^=\+$/ end=/^=\+$/
+highlight aws01 guifg=#7EE787 gui=NONE
 
-syntax match 02 /^---.*$/
-highlight 02 guifg=#F2CC60 gui=NONE
+syntax match aws02 /^---.*$/
+highlight aws02 guifg=#F2CC60 gui=NONE
 
-syntax region 03 start=/^[[:space:]]*\* / end=/^$/ keepend
-highlight 03 guifg=#8B949E gui=NONE
+syntax region aws03 start=/^[[:space:]]*\* / end=/^$/ keepend
+highlight aws03 guifg=#8B949E gui=NONE
 
-syntax match 04 /^-\ze /
-highlight 04 guifg=#58A6FF gui=NONE
+syntax match aws04 /^-\ze /
+highlight aws04 guifg=#58A6FF gui=NONE
 
-syntax match 05 /#.*$/
-highlight 05 guifg=#8B949E gui=NONE
+syntax match aws05 /#.*$/
+highlight aws05 guifg=#8B949E gui=NONE
 
-syntax match 06 /<-.*$/
-highlight 06 guifg=#8B949E gui=NONE
+syntax match aws06 /<-.*$/
+highlight aws06 guifg=#8B949E gui=NONE
 
-syntax region 07 start=/^#\+$/ end=/^#\+$/
-highlight 07 guifg=#58A6FF gui=NONE
+syntax region aws07 start=/^#\+$/ end=/^#\+$/
+highlight aws07 guifg=#58A6FF gui=NONE
 
-syntax region 08 start=/^[[:space:]]*```$/ end=/^[[:space:]]*```$/ keepend
-highlight 08 guifg=#F778BA gui=NONE
+syntax region aws08 start=/^[[:space:]]*```$/ end=/^[[:space:]]*```$/ keepend
+highlight aws08 guifg=#F778BA gui=NONE
 
-syntax match 09 /\[\zs[^]]*\ze\]/
-highlight 09 guifg=#F778BA gui=NONE
+syntax match aws09 /\[\zs[^]]*\ze\]/
+highlight aws09 guifg=#F778BA gui=NONE
 
 let b:current_syntax = "aws"
