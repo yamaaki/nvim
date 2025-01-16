@@ -190,9 +190,15 @@ return {
         local Rule = require("nvim-autopairs.rule")
         local npairs = require("nvim-autopairs")
 
-        npairs.setup({ check_ts = true, map_cr = false })
+        npairs.setup({ check_ts = true })
         npairs.remove_rule("`")
-        npairs.add_rule(Rule("```", "```"))
+
+        npairs.add_rule(
+          Rule("```", "```")
+            :with_cr(function()
+              return false -- Enter を押したときの処理を有効化
+            end)
+        )
       end,
     },
   },
