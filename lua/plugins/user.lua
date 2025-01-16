@@ -189,10 +189,8 @@ return {
       config = function()
         local Rule = require("nvim-autopairs.rule")
         local npairs = require("nvim-autopairs")
-
         npairs.setup({ check_ts = true })
         npairs.remove_rule("`")
-
         npairs.add_rule(
           Rule("```", "```")
             :with_cr(function()
