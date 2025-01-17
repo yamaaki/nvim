@@ -29,4 +29,7 @@ highlight memo07 guifg=#666666 gui=NONE
 syntax region memo08 start='^\s*```' end='^\s*```' keepend
 highlight memo08 guifg=#5FA7FF gui=NONE
 
+syntax match memo09 "^[?].*$"
+highlight memo09 guifg=#1A1D23 gui=NONE
+
 let b:current_syntax = "memo"

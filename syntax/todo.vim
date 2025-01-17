@@ -26,7 +26,7 @@ highlight todo06 guifg=#EAEAEA gui=NONE
 syntax match todo07 "^\s*---\s.*\s---"
 highlight todo07 guifg=#E4D46C gui=NONE
 
-syntax match todo08 "--\s.*$" contained
+syntax match todo08 "--\s.*$"
 highlight todo08 guifg=#999999 gui=NONE
 
 syntax match todo09 "<-\s.*$" containedin=ALL
@@ -37,5 +37,8 @@ highlight todo10 guifg=#666666 gui=NONE
 
 syntax region todo11 start='^\s*```' end='^\s*```' keepend
 highlight todo11 guifg=#5FA7FF gui=NONE
+
+syntax match todo12 "^[?].*$"
+highlight todo12 guifg=#1A1D23 gui=NONE
 
 let b:current_syntax = "todo"

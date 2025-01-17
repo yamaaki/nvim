@@ -94,6 +94,24 @@ return {
             end,
           },
           [",a"] = { "<Plug>(todo_active)", desc = "ToDo - アクティブにする" },
+
+          [",c"] = {
+            function()
+              local line = vim.api.nvim_get_current_line()
+              if line:match("^%?") then
+                local new_line = line:gsub("^%?", " ")
+                if new_line then
+                  vim.api.nvim_set_current_line(new_line)
+                end
+              else
+                local new_line = line:gsub("^.", "?")
+                if new_line then
+                  vim.api.nvim_set_current_line(new_line)
+                end
+              end
+            end,
+            desc = "Memo - 行頭の? とスペースをトグル"
+          },
         },
 
         v = {
